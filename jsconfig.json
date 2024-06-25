@@ -1,0 +1,10 @@
+
+
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@ajax/*": ["db/xhr/admin/*"],
+      }
+    }
+  }

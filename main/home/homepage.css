@@ -1,0 +1,4335 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.MainDiv {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.DefaultCont {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*----------------------------------------------------------------- Iphone XR-------------------------------------------------*/
+
+
+
+    .DefaultCont {
+        max-width: 1536px;
+    }
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+    }
+
+    /*---------------------------Login Navbar-----------------------------*/
+
+    #HomePagebackground {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    #Kinderbackground {
+        display: none;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #SHSbackground {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Tesdabackground {
+        width: 100vw;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #SchoolEventsbackground {
+        display: none;
+    }
+
+    #ScholarshipProgramsbackground {
+        display: none;
+    }
+
+    #FooterArea {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        background-color: #f9ed35;
+    }
+
+    #CopyrightArea {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: #0e1a4f;
+    }
+
+    /*---------------------------Homepage Tab----------------------------*/
+    #HomeSection {
+        width: 100%;
+        height: 90%;
+    }
+
+    #SecSection {
+        width: 100%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+    }
+
+    .SecSection2 {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SecSectionTop {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .SecSectionTop img {
+        width: 90%;
+        height: 100%;
+    }
+
+    #ThirdSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        position: relative;
+        margin-top: -5%;
+    }
+
+    #FifthSection {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    #SixthSection {
+        width: 100%;
+        background-color: #4959a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+ 
+    #SeventhSection {
+        width: 100%;
+    }
+
+    .HomeContainer {
+        width: 100vw;
+        height: 115vh;
+    }
+
+    #HomeContainer2 {
+        width: 100vw;
+        height: 100%;
+        margin-top: -14%;
+        background-color: white;
+        position: relative;
+    }
+
+    .HomeContainer3Contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .blobBG {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .blobBG img {
+        width: 45rem;
+        height: 44rem;
+
+    }
+
+    .HCContent {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .HCContentTopHeader h1 {
+        font-size: 6.5rem;
+        color: #4959A6;
+        font-family: "Allura", cursive;
+        font-weight: bold;
+        font-style: normal;
+
+    }
+
+    .HCContentTop2 {
+        width: 80%;
+        line-height: 1.7rem;
+    }
+
+    .HCContentTop2 p {
+        text-align: center;
+        height: 100%;
+        font-size: 1.2rem;
+        color: #5f6c7b;
+    }
+    
+    #EnrollmentTab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #EnrollmentTab img {
+        width: 0.8rem;
+        height: 0.8rem;
+        object-fit: cover;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+
+    #AdmissionArea {
+        width: 100vw;
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AdmissionContent {
+        z-index: 2;
+        margin-top: -17%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .ACSpan {
+        width: 40%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: auto;
+
+    }
+
+    .ACSpan span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .ACRight {
+        width: 79%;
+        height: 101%;
+        z-index: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: absolute;
+    }
+
+    #EnrollNowCitation {
+        padding: 0.5rem 2rem;
+        border: none;
+        background-color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #4959a6;
+        border-radius: 15px;
+    }
+
+    .ACRightContent {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .ACRightContent img {
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+    }
+
+
+    #LearnMorCHSI {
+        width: 17%;
+        padding: 0.8rem 1.2rem;
+        color: white;
+        font-weight: 600;
+        background-color: #4959a6;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin-top: 5%;
+    }
+
+    #LearnMorCHSI:hover {
+        background-color: white;
+        color: #4959a6;
+        border: 1px solid #4959A6;
+        cursor: pointer;
+    }
+
+    #LearnMorCHSI img {
+        margin-left: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    #AdmissionReqArea {
+        margin-top: -24%;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .ARCont {
+        margin: auto;
+        display: flex;
+        padding: 2rem;
+        width: 70%;
+        height: 70%;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+
+    .ARContLeftImg {
+        width: 100%;
+        height: 95%;
+    }
+
+    .ARContLeftImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .ARContLeft {
+        width: 50%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .ARContLeft h3 {
+        font-size: 2rem;
+        color: #094067;
+    }
+
+    .ARContRight {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .ARContRight2 {
+        padding: 1rem;
+        height: 12%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ARContRight2 h3 {
+        font-size: 2.4rem;
+        color: #094067;
+        padding: 0.2rem 1rem;
+    }
+
+    .HCContentBottom {
+        height: 50%;
+        width: 100%;
+    }
+
+    .ProgramsOffered {
+        width: 100%;
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .ProgramsOfferedDiv {
+        width: 100%;
+        height: 80%;
+        padding: 0.3rem 1rem;
+    }
+
+    .ProgramsOfferedDiv span {
+        color: #5f6c7b;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    .ProgramsOfferedDiv span img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        margin-right: 2%;
+    }
+
+    .HomeContainer3Contents h2 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+    }
+
+    .HomeContainer3Contents p {
+        width: 89%;
+        text-align: center;
+    }
+
+
+    .HomeImageHistory {
+        margin-top: 2%;
+        width: 90vw;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+    }
+
+    .HomeImageHistory img {
+        width: 38vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .EnrollmentDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 90vw;
+        height: 23rem;
+        margin-top: 2%;
+        gap: 3%;
+    }
+
+    .EnrollmentDiv div:not(.G1ImagesCover, .SeniorImagesCover, .TesdaImagesCover) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+        width: 27%;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 3%;
+    }
+
+    .EnrollmentDiv div button {
+        margin-top: 2%;
+        padding: 6px 30px;
+    }
+
+    /*---------------------------Login Navbar-----------------------------*/
+
+    #NavbarMain {
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+    }
+
+
+    .TopNavbar {
+        width: 100%;
+        height: 4.4rem;
+        display: flex;
+        border: none;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        box-shadow: -6px -6px 14px rgba(70, 70, 70, 0.15),
+            4px 5px 14px rgba(70, 70, 70, 0.15);
+    }
+
+    .hamburgerMenu {
+        display: none;
+        justify-content: end;
+        margin-right: 2%;
+    }
+
+    .hamburgerMenu img {
+        display: none;
+        width: 29px;
+        height: 29px;
+        display: flex;
+        justify-content: end;
+    }
+
+  
+
+    .EnrollmentCategoriesCont {
+        position: relative;
+        width: 77%;
+        height: 15rem;
+        display: none;
+        justify-content: end;
+    }
+
+    #EnrollmentCategories {
+        position: absolute;
+        height: 15rem;
+        width: 16%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid #e7e7e7;
+        border-radius: 10px;
+    }
+
+    #EnrollmentCategories li {
+        list-style: none;
+        color: #010101;
+        padding: 1.2rem 1rem;
+        font-size: 12px;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    #EnrollmentCategories li:hover {
+        color: #4959A6;
+        cursor: pointer;
+
+    }
+
+    #EnrollmentCategories img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    #Extra {
+        width: 22%;
+    }
+
+    .logoSchool {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .logoSchool span {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        color: #4959A6;
+    }
+
+    .logoSchool>img {
+        width: 35px;
+        height: 35px;
+        margin-right: 1%;
+    }
+
+    .rightNavSection {
+        width: 70%;
+        display: flex;
+        justify-content: left;
+     }
+ 
+     .rightNavSection ul {
+        width: 70%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+     }
+
+    .rightNavSection ul li {
+        width: 12%;
+        color: #001a21;
+        padding: 1rem 1.5rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .rightNavSection ul li:hover:not(#UserLogin) {
+        color: #4959a6;
+        cursor: pointer;
+        border-bottom: 4px solid #4959a6;
+    }
+
+    .rightNavSection ul li img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    #MainDiv {
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+    }
+
+
+    #Nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    #SideNavbar {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        text-align: center;
+        background-color: #201e1f;
+        z-index: 3;
+        color: white;
+    }
+
+    #SideNavbar div {
+        display: flex;
+        width: 80%;
+        text-align: center;
+        padding: 17px 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .NavC img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .NavC span {
+        font-size: 14px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .EnrollmentDropDown span {
+        font-size: 14px;
+    }
+
+    #SideNavbar div:hover {
+        background-color: #393939;
+    }
+
+    /*------------------------------------Login Css ------------------------------------------*/
+
+    #Loginbackground {
+        background: linear-gradient(white, white) no-repeat, #f9ed35;
+        background-size: 100% 66%, 100% 66%;
+        background-position: top, bottom;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: end;
+        z-index: 1;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .loginContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -6px -6px 15px rgba(70, 70, 70, 0.15),
+            10px 10px 15px rgba(70, 70, 70, 0.15);
+        padding: 30px;
+        width: 100%;
+    }
+
+    #Loginbackground input {
+        border: 1px solid #3b6df4;
+        width: 20rem;
+        height: 38px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 2px 3px 5px #201e1f,
+            2px 5px 5px #c4d0de36;
+        margin-bottom: 10px;
+    }
+
+    #SchoolID {
+        margin-bottom: 10px;
+    }
+
+
+    #Loginbackground h3 {
+        margin-bottom: 9%;
+        font-size: 22px;
+        color: #201e1f;
+    }
+
+    #Loginbackground label {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 4%;
+        color: #201e1f;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .Container4logo {
+        z-index: 1;
+
+    }
+
+    .Container4logo>img {
+
+        border-radius: 10%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 8px;
+
+    }
+
+    #LoginNotif {
+        font-size: 12px;
+        margin-top: 6%;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    #ForgotPass {
+        margin-top: 5%;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 600;
+        color: #201e1f;
+    }
+
+    #LoginButton:hover {
+        background: linear-gradient(320deg, #010101, #152da3);
+        cursor: pointer;
+    }
+
+    #LoginButton {
+        margin-top: 5%;
+        padding: 8px 35px;
+        border: none;
+        width: 20rem;
+        height: 42px;
+        background: linear-gradient(320deg, #201e1f, #4959a6);
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .container {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .backgroundimg {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        position: absolute;
+        height: 51%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .backgroundimg2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        position: absolute;
+        height: 55%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .enrollContainer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 94%;
+        z-index: 2;
+    }
+
+    .enrollContainer span {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    /*------------------------------------Enrollment for Kinder Css ------------------------------------------*/
+    #overlayStudPic {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #ModalViewImageStudPic {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 20px;
+
+    }
+
+    #closeModalViewImageStudPic {
+        position: absolute;
+        font-size: 23px;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #closeModalViewImageStudPic:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #ModalViewImageStudPicSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #imageToDisplayStudPic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #overlayForm138 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #ModalViewImageForm138 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #ModalViewImageForm138SubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #closeModalViewImageForm138 {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #closeModalViewImageForm138:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #imageToDisplayForm138 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #overlayPSA {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #ModalViewImagePSA {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #ModalViewImagePSASubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #closeModalViewImagePSA {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #closeModalViewImagePSA:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #imageToDisplayPSA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #overlayGoodMoral {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #ModalViewImageGoodMoral {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #ModalViewImageGoodMoralSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+
+    }
+
+    #closeModalViewImageGoodMoral {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #closeModalViewImageGoodMoral:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #imageToDisplayGoodMoral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .Kindertitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 8%;
+    }
+
+    .Kindertitle h3 {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        color: #094067;
+    }
+
+    .KEnrollmentContainer {
+        width: 100%;
+
+    }
+
+    .FlexKEnroll {
+        display: flex;
+        width: 100%;
+    }
+
+    .FirstReq {
+        width: 100%;
+        height: 22%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .FirstReqPart1 {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .FirstReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FirstReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FirstReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FirstReqPart2 {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    }
+
+    .FirstReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FirstReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FirstReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+    }
+
+    .FirstReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+    }
+
+    .FirstReqPart3 {
+        display: flex;
+        width: 50%;
+    }
+
+    .FirstReqPart3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .FirstReqPart3Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FirstReqPart3Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FirstReqPart3Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .ThirdReq {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .ThirdReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .ThirdReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ThirdReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .ThirdReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .ThirdReqPart1Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .ThirdReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .ThirdReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ThirdReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .ThirdReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .ThirdReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FourthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .FourthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .FourthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FourthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FourthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FourthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .FourthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FourthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FourthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FourthReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FifthReq {
+        height: 11rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .FifthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .FifthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FifthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FifthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .FifthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .FifthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FifthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .FifthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SixthReq {
+        height: 8rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SixthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SixthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SixthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SixthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SixthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SixthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SixthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SixthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    #enrollmentForm {
+        width: 75%;
+    }
+
+
+    #Kinderbackground option {
+        font-size: 12px;
+    }
+
+    #Kinderbackground option:hover {
+        background-color: #f9ed35;
+    }
+
+    #Kinderbackground label {
+        font-size: 14px;
+    }
+
+
+    .KstudentPicture {
+        display: flex;
+    }
+
+    #FileNameofStudPicContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #FileNameofStudPicContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #FileNameofForm138Container {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #FileNameofForm138Container span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #FileNameofPSAContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #FileNameofPSAContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #FileNameofGoodMoralContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #FileNameofGoodMoralContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .KstudentPicture input[type="file"]::file-selector-button {
+        background-color: #201e1f;
+    }
+
+
+    #UserLogin {
+        background-color: #4959A6;
+        border-radius: 15px;
+        font-weight: 900;
+        font-family: 'Noto Sans Bamum', sans-serif;
+        padding: 0.6rem 2rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #UserLogin:hover {
+        color: #4959a6;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid #4959A6;
+    }
+
+    .kline {
+        border-top: 1px solid #98999d;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .KphotoRequirements {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .KphotoRequirements div:not(#KNote, #FileNameofStudPicContainer, #FileNameofForm138Container, #FileNameofPSAContainer, #FileNameofGoodMoralContainer) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .StudPicviewImage {
+        display: none;
+    }
+
+    .KphotoRequirements span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 14px;
+        margin-right: auto;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .KphotoRequirements button {
+        width: 100px;
+        height: 35px;
+        background-color: #201e1f;
+        border: none;
+        font-weight: 400;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .KphotoRequirements button:hover {
+        background-color: #494949;
+        cursor: pointer;
+    }
+
+    #NoteTitle {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #KNote {
+        width: 45%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #KNote span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    #NoteTitle2 {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #KNote2 {
+        width: 75%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #KNote2 span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    .studentInformationTitle {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .studentInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        font-weight: 600;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .PortalAccountInformationTitle {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .PortalAccountInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .KStudentInfosub {
+        font-size: 12px;
+    }
+
+    .submitKenrollForm {
+        margin-top: 5%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .submitKenrollForm button {
+        width: 22%;
+        height: 2.4rem;
+        background-color: #010101;
+        color: white;
+        border: none;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    /*------------------------------------------------------------------------SHS Enrollment --------------------------------------------------------- */
+    #SHSoverlayStudPic {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #SHSModalViewImageStudPic {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 20px;
+
+    }
+
+    #SHScloseModalViewImageStudPic {
+        position: absolute;
+        font-size: 23px;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #SHScloseModalViewImageStudPic:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #SHSModalViewImageStudPicSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #SHSimageToDisplayStudPic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #SHSoverlayForm138 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #SHSModalViewImageForm138 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #SHSModalViewImageForm138SubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #SHScloseModalViewImageForm138 {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #SHScloseModalViewImageForm138:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #SHSimageToDisplayForm138 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #SHSoverlayPSA {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #SHSModalViewImagePSA {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #SHSModalViewImagePSASubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #SHScloseModalViewImagePSA {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #SHScloseModalViewImagePSA:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #SHSimageToDisplayPSA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #SHSoverlayGoodMoral {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #SHSModalViewImageGoodMoral {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #SHSModalViewImageGoodMoralSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+
+    }
+
+    #SHScloseModalViewImageGoodMoral {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #SHScloseModalViewImageGoodMoral:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #SHSimageToDisplayGoodMoral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #SHSoverlayCertCompl {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #SHSModalViewImageCertCompl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #SHSModalViewImageCertComplSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+
+    }
+
+    #SHScloseModalViewImageCertCompl {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #SHScloseModalViewImageCertCompl:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #SHSimageToDisplayCertCompl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .SHStitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 8%;
+    }
+
+    .SHStitle h3 {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .SHSEnrollmentContainer {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .SHSFirstReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SHSFirstReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFirstReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFirstReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFirstReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFirstReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFirstReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFirstReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFirstReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFirstReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFirstReqPart3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 50%;
+
+    }
+
+    .SHSFirstReqPart3Cont {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .SHSFirstReqPart3Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFirstReqPart3Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFirstReqPart3Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSThirdReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SHSThirdReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSThirdReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSThirdReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSThirdReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSThirdReqPart1Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSThirdReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSThirdReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSThirdReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSThirdReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSThirdReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFourthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SHSFourthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFourthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFourthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFourthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFourthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFourthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFourthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFourthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFourthReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFifthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SHSFifthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFifthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFifthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFifthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSFifthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSFifthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSFifthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSFifthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSSixthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SHSSixthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSSixthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSSixthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSSixthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .SHSSixthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .SHSSixthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHSSixthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .SHSSixthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    #SHSenrollmentForm {
+        width: 75%;
+    }
+
+
+    #SHSbackground option {
+        font-size: 12px;
+    }
+
+    #SHSbackground option:hover {
+        background-color: #f9ed35;
+    }
+
+    #SHSbackground label {
+        font-size: 14px;
+    }
+
+
+    .SHSstudentPicture {
+        display: flex;
+    }
+
+    #SHSFileNameofStudPicContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #SHSFileNameofStudPicContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #SHSFileNameofForm138Container {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #SHSFileNameofForm138Container span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #SHSFileNameofPSAContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #SHSFileNameofPSAContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #SHSFileNameofGoodMoralContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #SHSFileNameofGoodMoralContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .SHSstudentPicture input[type="file"]::file-selector-button {
+        background-color: #201e1f;
+    }
+
+
+    #SHSSchoolEventsDesktop {
+        margin-right: 20px;
+    }
+
+
+    .SHSline {
+        border-top: 1px solid #98999d;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .SHSphotoRequirements {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .SHSphotoRequirements div:not(#SHSNote, #SHSFileNameofStudPicContainer, #SHSFileNameofForm138Container, #SHSFileNameofPSAContainer, #SHSFileNameofGoodMoralContainer,
+        #SHSFileNameofCertComplContainer) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+    }
+
+    #SHSFileNameofCertComplContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    .SHStudPicviewImage {
+        display: none;
+    }
+
+    .SHSphotoRequirements span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 14px;
+        margin-right: auto;
+    }
+
+    .SHSphotoRequirements button {
+        width: 100px;
+        height: 35px;
+        background-color: #201e1f;
+        border: none;
+        font-weight: 400;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .SHSphotoRequirements button:hover {
+        background-color: #494949;
+        cursor: pointer;
+    }
+
+    #SHSNoteTitle {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #SHSNote {
+        width: 45%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #SHSNote span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    #SHSNoteTitle2 {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #SHSNote2 {
+        width: 75%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 4%;
+    }
+
+    #SHSNote2 span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    .SHSstudentInformationTitle {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .SHSstudentInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        font-weight: 600;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .SHSPortalAccountInformationTitle {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .SHSPortalAccountInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .SHSStudentInfosub {
+        font-size: 12px;
+    }
+
+    .submitSHSenrollForm {
+        margin-top: 3%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submitSHSenrollForm button {
+        width: 22%;
+        height: 2.4rem;
+        background-color: #010101;
+        color: white;
+        border: none;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    /*----------------------------------------------------------------------------------TESDA Enrollment----------------------------------------------------------- */
+    #Tesdabackground {
+        font-size: 14px;
+    }
+
+    #ToverlayIdPic {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #TModalViewImageIdPic {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 20px;
+
+    }
+
+    #TcloseModalViewImageIdPic {
+        position: absolute;
+        font-size: 23px;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #TcloseModalViewImageIdPic:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #TModalViewImageIdPicSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #TimageToDisplayIdPic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #ToverlayTransRec {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #TModalViewImageTransRec {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #TModalViewImageTransRecSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #TcloseModalViewImageTransRec {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #TcloseModalViewImageTransRec:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #TimageToDisplayTransRec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #ToverlayPSA {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #TModalViewImagePSA {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #TModalViewImagePSASubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    #TcloseModalViewImagePSA {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #TcloseModalViewImagePSA:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #TimageToDisplayPSA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #ToverlayGoodMoral {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #TModalViewImageGoodMoral {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #TModalViewImageGoodMoralSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+
+    }
+
+    #TcloseModalViewImageGoodMoral {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #TcloseModalViewImageGoodMoral:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #TimageToDisplayGoodMoral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #ToverlayCertCompl {
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: absolute;
+        display: none;
+    }
+
+    #TModalViewImageCertCompl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #98999d;
+        border-radius: 5px;
+    }
+
+    #TModalViewImageCertComplSubContainer {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+
+    }
+
+    #TcloseModalViewImageCertCompl {
+        position: absolute;
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #TcloseModalViewImageCertCompl:hover {
+        background-color: #a30d0d;
+        cursor: pointer;
+    }
+
+    #TimageToDisplayCertCompl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .Ttitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 8%;
+        margin-bottom: 4%;
+
+    }
+
+    .Ttitle h3 {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+
+    }
+
+    .ExtraSpaceBelow {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .TEnrollmentContainer {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .TFirstReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TFirstReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFirstReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFirstReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFirstReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFirstReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFirstReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFirstReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFirstReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFirstReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFirstReqPart3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 50%;
+
+    }
+
+    .TFirstReqPart3Cont {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .TFirstReqPart3Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFirstReqPart3Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFirstReqPart3Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TThirdReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TThirdReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TThirdReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TThirdReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TThirdReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TThirdReqPart1Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TThirdReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TThirdReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TThirdReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TThirdReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TThirdReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFourthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TFourthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFourthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFourthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFourthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFourthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFourthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFourthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFourthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFourthReqPart2Cont select {
+        display: flex;
+        width: 83%;
+        height: 2.0rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFifthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TFifthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFifthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFifthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFifthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TFifthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TFifthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TFifthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TFifthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TSixthReq {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TSixthReqPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TSixthReqPart1Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TSixthReqPart1Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TSixthReqPart1Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    .TSixthReqPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .TSixthReqPart2Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TSixthReqPart2Cont label {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        margin-bottom: 2%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .TSixthReqPart2Cont input {
+        display: flex;
+        width: 80%;
+        height: 1.8rem;
+        border: 1px solid #98999d;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+
+    #TenrollmentForm {
+        width: 75%;
+    }
+
+
+    #Tbackground option {
+        font-size: 12px;
+    }
+
+    #Tbackground option:hover {
+        background-color: #f9ed35;
+    }
+
+    #Tbackground label {
+        font-size: 14px;
+    }
+
+
+    .TIdPic {
+        display: flex;
+    }
+
+    #TFileNameofIdPicContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #TFileNameofIdPicContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #TFileNameofForm138Container {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #TFileNameofForm138Container span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #TFileNameofPSAContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #TFileNameofPSAContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #TFileNameofGoodMoralContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    #TFileNameofGoodMoralContainer span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .TstudentPicture input[type="file"]::file-selector-button {
+        background-color: #201e1f;
+    }
+
+
+    #TSchoolEventsDesktop {
+        margin-right: 20px;
+    }
+
+
+    .Tline {
+        border-top: 1px solid #98999d;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .TphotoRequirements {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    #TFileNameofTransRecContainer {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+        margin-bottom: 2%;
+    }
+
+    .TphotoRequirements div:not(#TNote, #TFileNameofIdPicContainer, #TFileNameofTransRecContainer, #TFileNameofPSAContainer, #TFileNameofGoodMoralContainer,
+        #TFileNameofCertComplContainer) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .TtudPicviewImage {
+        display: none;
+    }
+
+    .TphotoRequirements span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        color: #0e1a4f;
+        font-weight: 600;
+        margin-right: auto;
+    }
+
+    .TphotoRequirements button {
+        width: 100px;
+        height: 35px;
+        background-color: #201e1f;
+        border: none;
+        font-weight: 400;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .TphotoRequirements button:hover {
+        background-color: #494949;
+        cursor: pointer;
+    }
+
+    #TNoteTitle {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #TNote {
+        width: 45%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #TNote span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    #TNoteTitle2 {
+        background-color: #ffa6a6;
+        border-radius: 15px;
+        padding: 6px 20px;
+        font-weight: 600;
+        color: red;
+    }
+
+    #TNote2 {
+        width: 75%;
+        border: 1px solid #98999d;
+        padding: 10px 4px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #TNote2 span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+    .TstudentInformationTitle {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .TstudentInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        font-weight: 600;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .TPortalAccountInformationTitle {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .TPortalAccountInformationTitle span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+        color: #0e1a4f;
+        font-family: 'Noto Sans Bamum', sans-serif;
+    }
+
+    .TStudentInfosub {
+        font-size: 12px;
+    }
+
+    .submitTenrollForm {
+        margin-top: 3%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .submitTenrollForm button {
+        width: 22%;
+        height: 2.4rem;
+        background-color: #010101;
+        color: white;
+        border: none;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    .Kpopup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 8px 14px 16px rgba(0, 0, 0, 0.1);
+        width: 310px;
+        height: 200px;
+        z-index: 7;
+    }
+
+    .KpopupCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #KSuccessTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -26px;
+        margin-bottom: 4%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #KSuccessSubTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .SHSpopup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 8px 14px 16px rgba(0, 0, 0, 0.1);
+        width: 310px;
+        height: 200px;
+        z-index: 7;
+    }
+
+    .SHSpopupCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #SHSSuccessTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -26px;
+        margin-bottom: 4%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #SHSSuccessSubTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .Tpopup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 8px 14px 16px rgba(0, 0, 0, 0.1);
+        width: 310px;
+        height: 200px;
+        z-index: 7;
+    }
+
+    .TpopupCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #TSuccessTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -26px;
+        margin-bottom: 4%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #TSuccessSubTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .custom-focus {
+        border: 1px solid #f9ed35;
+        outline: 1px solid red;
+    }
+
+    .CopyrightLeft {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CopyrightLeft span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .CopyrightRight {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .CopyrightRight span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .FAContentLeft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 3%;
+    }
+
+    .FAContentLeft span {
+        color: #201e1f;
+        font-weight: 900;
+        font-family: 'Noto Sans Bamum', sans-serif;
+        font-size: 1rem;
+    }
+
+    .FAContLogo {
+        display: flex;
+        margin-right: 5%;
+
+    }
+
+    .FAContLogo img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+
+    }
+
+    .FACont {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .FooterAreaLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 100%;
+    }
+
+    .FAContLeftBottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FAContLeftBottom img {
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+    }
+
+    .FooterAreaMid {
+        display: flex;
+        width: 33%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .FooterAreaRight {
+        display: flex;
+        width: 33%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    #FourthSection {
+        width: 100%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        padding-top: 4%;
+    }
+
+    .FourthSecContent {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .FSTop {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FSTop img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+        width: 95%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FSBottom {
+        display: flex;
+        width: 50%;
+        height: 72%;
+        background-color: #f2f3f8;
+    }
+
+    .FSBottom h3 {
+        padding: 2em;
+        color: #4959A6;
+        font-weight: 800;
+    }
+
+    .FSBottom2 {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+    }
+
+    .ProgramsOffered {
+        width: 100%;
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .ProgramsOfferedDiv {
+        width: 100%;
+        height: 11%;
+        padding: 0.3rem 1rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .ProgramsOfferedDiv img {
+        width: 1.8em;
+        height: 1.8em;
+        object-fit: cover;
+
+    }
+
+    .ProgramsOfferedDiv span {
+        color: #5f6c7b;
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        padding-left: 5%;
+        justify-content: flex-start;
+    }
+
+    .SSContent {
+        padding: 1em;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .SixthSectionBottom {
+        height: 85%;
+        width: 100%;
+        padding-top: 1em;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .SixthSectionBottom h4 {
+        color: white;
+        margin-bottom: 2%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .SixthSectionBottom span {
+        color: white;
+        font-size: 0.8em;
+        margin-bottom: 1%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .SixthImage {
+        width: 100%;
+        text-align: left;
+    }
+
+    .SixthSectionBottom img {
+        width: 1.4em;
+        height: 1.4em;
+        object-fit: cover;
+        text-align: left;
+    }
+
+    .logoSchoolSide2 {
+        display: flex;
+        width: 100%;
+        height: 15%;
+    }
+
+    .logoSchoolSide2 h2 {
+        font-size: 1.5em;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .logoSchoolSide2>img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1%;
+    }
+
+    .CopyrightLeft {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CopyrightLeft span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .CopyrightRight {
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CopyrightRight span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+    
+
+
+.HomeImage{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: white; 
+}
+
+.swiper .swiper-slide{
+    width: 100%;
+}
+
+.swiper-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(12, 18, 86, 0.8));
+}
+
+.swiper .swiper-button-next.swiper-button-disabled, 
+.swiper .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #98999d;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #152da3;
+    border-radius: 10px;
+  }
+
+  .CoverPhotos{
+    width: 100%;
+    height: 100%;
+  }

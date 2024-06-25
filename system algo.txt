@@ -1,0 +1,30 @@
+            NOTES
+*Image JS*
+1. created an input with a style display none
+2. get the id of the button and the input,
+    then add an eventlistener to the button so that if you click it, you would also click the input at the same time
+3. include the id of the main image div in the .KphotoRequirements div:not() para mo dissapear sya
+4. create a function that shows the filename of the selected image
+5.
+
+
+*Pagination Algo*
+1. create variables 
+    for storing the number of records per page,
+    for storing the page number and
+    for storing the offset
+
+    -the offset is the indicator of where do you want to start fetching records
+    - to get the offset you need a formula of
+
+        offset = pageNumber * number of records
+
+*Pagination Bug*
+-After adding, editing or deleting it goes back to page 1
+    solution: create a variable that stores the currentpage, store the page in that variable
+
+*How to fetch data in two differemt elements using ajax
+-create fetch.php
+-concatinate both information and store in oone variable, then echo
+-use .split at the response in ajax
+-assign variables by calling the array element

@@ -1,0 +1,5314 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background-color: #f7f8fc;
+    }
+
+    #NavbarMain {
+        position: fixed;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .MainDiv {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .TopNavbar {
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+        background-color: #050608;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .logoSchool {
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+        width: 30%;
+    }
+
+    .logoSchool span {
+        margin-left: 2%;
+        color: white;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .logoSchool>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .rightNavSection {
+        background-color: #050608;
+        width: 14%;
+        height: 100%;
+        position: fixed;
+
+    }
+
+    .rightNavSection ul {
+        list-style: none;
+    }
+
+    .rightNavSection ul li {
+        color: white;
+        padding: 1.1rem 1.5rem;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    .rightNavSection ul li img {
+        width: 1rem;
+        height: 1rem;
+        object-fit: cover;
+        margin-right: 0.7rem;
+    }
+
+    #Logout {
+        color: white;
+        padding: 1.1rem 1.5rem;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    #Logout img {
+        width: 1rem;
+        height: 1rem;
+        object-fit: cover;
+        margin-right: 0.7rem;
+    }
+
+    #Logout:hover {
+        color: #f9ed35;
+        cursor: pointer;
+        background-color: #333333;
+        border-radius: 100px;
+    }
+
+    .rightNavSection ul li:hover {
+        color: #f9ed35;
+        cursor: pointer;
+        background-color: #0f0f18;
+        border-radius: 100px;
+    }
+
+    .activeTab {
+        background-color: #201e1f;
+        color: #f9ed35;
+    }
+
+    .activeNav {
+        background-color: #0f0f18;
+        border-radius: 100px;
+    }
+
+    .custom-focus {
+        border: 1px solid red;
+        outline: 1px solid red;
+    }
+
+    .navcont {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navtoppart {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 25%;
+    }
+
+    .navbottompart {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    #overlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+
+    }
+
+    .CloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #CloseAddSubj {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #CloseAddSubj:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    .inputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 23vw;
+        height: 51.5rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #inputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #inputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 4%;
+    }
+
+    #inputs h4 {
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    #inputs input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 5%;
+    }
+
+    #inputs select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 5%;
+    }
+
+    #SubmitSubjectBtn {
+        padding: 0.5rem 2.3rem;
+        margin-top: 5%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #HomeArea {
+        display: none;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #EventsArea {
+        display: none;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #SubjectArea {
+        display: none;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #SectionArea {
+        display: none;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    .SubjectContents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+    }
+
+    .GradeLevelContents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+
+    }
+
+    #SchoolYearArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 16.5%;
+
+    }
+
+    #PaymentsArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #AccountsArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #EnrollmentArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #GradeLevelArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #StrandsArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #TeachersArea {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    .SMoreOptions {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .leftsideOptions {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .rightsideOptions {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        gap: 1%;
+    }
+
+    #AddTeacher {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+    }
+
+    #AddTeacher img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddTeacher:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AddSubject {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #AddSubject img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddSubject:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AddSection {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+    }
+
+    #AddSection img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddSection:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AddGradeLevel {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #AddGradeLevel img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddGradeLevel:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AddStrand {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #AddStrand img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddStrand:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AddCourse {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #AddCourse img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #AddCourse:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    .SMoreOptions button {
+        padding: 0.3rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SMoreOptions img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 7px;
+    }
+
+    .SubjectContentCont {
+        width: 74vw;
+        height: 74vh;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 4rem;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .SubjectMainCont {
+        width: 100%;
+        height: 83%;
+        display: flex;
+        gap: 3%;
+    }
+
+    #LeftCoursesContent {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .LeftGradeCont {
+        width: 100%;
+        height: 100%;
+    }
+
+    .LeftSubjCont {
+        width: 100%;
+        height: 100%;
+    }
+
+    .LeftSubjContHeader {
+        height: 10%;
+        width: 100%;
+    }
+
+    .LeftSubjContHeader h3 {
+        margin-bottom: 1%;
+    }
+
+    .LeftSectionContHeader {
+        height: 10%;
+        width: 100%;
+    }
+
+    .LeftSectionContHeader h3 {
+        margin-bottom: 1%;
+    }
+
+    .LeftTeacherContHeader {
+        height: 10%;
+        width: 100%;
+    }
+
+    .LeftTeacherContHeader h3 {
+        margin-bottom: 1%;
+    }
+
+    .LeftGradeContHeader {
+        width: 100%;
+    }
+
+    .LeftSFContHeader {
+        height: 10%;
+        width: 100%;
+    }
+
+    .LeftSFContHeader h3 {
+        margin-bottom: 1%;
+    }
+
+    #LeftSubjContent {
+        height: 90%;
+        width: 100%;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    #LeftSubjContent::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+
+    }
+
+    #LeftSubjContent::-webkit-scrollbar-thumb {
+        background-color: #c5c5c5;
+        border-radius: 20px;
+    }
+
+    #LeftGradeContent {
+        height: 90%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #LeftGradeContent::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+
+    }
+
+    #LeftGradeContent::-webkit-scrollbar-thumb {
+        background-color: #c5c5c5;
+        border-radius: 20px;
+    }
+
+    .trFirstSubj td:nth-child(1) {
+        width: 35%;
+    }
+
+    .TableFetchSubj td:nth-child(1) {
+        width: 35%;
+    }
+
+    .TableFetchSubj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .TableFetchSubj tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74vw;
+        font-size: 0.9rem;
+    }
+
+    .TableFetchSubj tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .TableFetchSubj td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .TableFetchSubj tr:not(.trFirstSubj):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .TableFetchSubj tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .TableFetchSubj td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+    }
+
+    #SearchPayments {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchTeacher {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchAccount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchEnrollees {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchSubject {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #SearchSchoolFees {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #input-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #input-container>img {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 10px;
+        left: 15px;
+    }
+
+    #input-container>input {
+        padding-left: 40px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 20px;
+    }
+
+    .ByMainContSubj {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 40%;
+        gap: 1%;
+        color: #f9ed35;
+    }
+
+    .ByMainContSubj select {
+        padding: 0.5rem 1rem;
+        background-color: rgb(238, 238, 238);
+        border: none;
+        border-radius: 5px;
+    }
+
+    #AssgnStudSectCont {
+        display: none;
+        justify-content: end;
+        align-items: center;
+        width: 34%;
+        border-radius: 5px;
+        gap: 1%;
+    }
+
+    #AssgnStudSectCont select {
+        padding: 0.5rem 1rem;
+        background-color: rgb(238, 238, 238);
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*-------------RightSubjCont-------------------- */
+    .RightSubjCont {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .RightSubjContHeader {
+        height: 10%;
+        width: 100%;
+    }
+
+    .RightSubjContHeader h3 {
+        margin-bottom: 1%;
+    }
+
+    #RightSubjContent {
+        height: 90%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .Enrolltable input[type="checkbox"] {
+        display: none;
+    }
+
+    .trFirstTeacher td:nth-child(1) {
+        width: 30%;
+    }
+
+    .TableFetchTeachers td:nth-child(1) {
+        width: 30%;
+    }
+
+    .trFirstTeacher td:nth-child(4) {
+        width: 50%;
+    }
+
+    .TableFetchTeachers td:nth-child(4) {
+        width: 50%;
+    }
+
+    .trFirstTeacher td:nth-child(5) {
+        width: 50%;
+    }
+
+    .TableFetchTeachers td:nth-child(5) {
+        width: 50%;
+    }
+
+    .TableFetchTeachers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .TableFetchTeachers tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        font-size: 0.9rem;
+    }
+
+    .TableFetchTeachers tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .TableFetchTeachers td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .TableFetchTeachers tr:not(.trFirstTeacher):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .TableFetchTeachers tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .TableFetchTeachers td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .Enrolltable td:nth-child(1) {
+        width: 15%;
+    }
+
+    .trFirstEnroll td:nth-child(1) {
+        width: 15%;
+    }
+
+    .Enrolltable td:nth-child(2) {
+        width: 15%;
+    }
+
+    .trFirstEnroll td:nth-child(2) {
+        width: 15%;
+    }
+
+    .Enrolltable td:nth-child(3) {
+        width: 55%;
+    }
+
+    .trFirstEnroll td:nth-child(3) {
+        width: 55%;
+    }
+
+    .Enrolltable td:nth-child(4) {
+        width: 100%;
+    }
+
+    .trFirstEnroll td:nth-child(4) {
+        width: 100%;
+    }
+
+    .trFirstEnroll td:nth-child(5) {
+        width: 90%;
+    }
+
+    .Enrolltable td:nth-child(5) {
+        width: 90%;
+    }
+
+    .trFirstEnroll td:nth-child(6) {
+        width: 90%;
+    }
+
+    .Enrolltable td:nth-child(6) {
+        width: 90%;
+    }
+
+    .trFirstEnroll td:nth-child(7) {
+        width: 50%;
+    }
+
+    .Enrolltable td:nth-child(7) {
+        width: 50%;
+    }
+
+    .MoreInfoStudentBtn {
+        border: none;
+        border-radius: 15px;
+    }
+
+    .MoreInfoStudentBtn:hover {
+        border: none;
+        cursor: pointer;
+        background-color: #201e1f;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .Enrolltable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Enrolltable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 73vw;
+        font-size: 0.9rem;
+    }
+
+    .Enrolltable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .Enrolltable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .Enrolltable tr:not(.trFirstEnroll):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .Enrolltable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .Enrolltable td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .Enrolltable2 td:nth-child(1) {
+        width: 15%;
+    }
+
+    .trFirstEnroll2 td:nth-child(1) {
+        width: 15%;
+    }
+
+    .Enrolltable2 td:nth-child(2) {
+        width: 50%;
+    }
+
+    .trFirstEnroll2 td:nth-child(2) {
+        width: 50%;
+    }
+
+    .Enrolltable2 td:nth-child(3) {
+        width: 55%;
+    }
+
+    .trFirstEnroll2 td:nth-child(3) {
+        width: 55%;
+    }
+
+    .Enrolltable2 td:nth-child(4) {
+        width: 100%;
+    }
+
+    .trFirstEnroll2 td:nth-child(4) {
+        width: 100%;
+    }
+
+    .trFirstEnroll2 td:nth-child(5) {
+        width: 90%;
+    }
+
+    .Enrolltable2 td:nth-child(5) {
+        width: 90%;
+    }
+
+    .trFirstEnroll2 td:nth-child(6) {
+        width: 90%;
+    }
+
+    .Enrolltable2 td:nth-child(6) {
+        width: 90%;
+    }
+
+    .trFirstEnroll2 td:nth-child(7) {
+        width: 50%;
+    }
+
+    .Enrolltable2 td:nth-child(7) {
+        width: 50%;
+    }
+
+    .Enrolltable2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Enrolltable2 tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 73vw;
+        font-size: 0.9rem;
+    }
+
+    .Enrolltable2 tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .Enrolltable2 td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .Enrolltable2 tr:not(.trFirstEnroll2):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .Enrolltable2tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .Enrolltable2 td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .TeacherProfile img {
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #4959A6;
+    }
+
+    .SearchTeacher {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 45%;
+        height: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    #Rinput-container {
+        position: relative;
+    }
+
+    #Rinput-container>img {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 10px;
+        left: 15px;
+    }
+
+    #Rinput-container>input {
+        padding-left: 40px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 20px;
+    }
+
+    /*-------------ResultSUbjCont-------------------- */
+    .STPageContainerDiv {
+        margin-top: 2%;
+        width: 100%;
+        height: 2vw;
+        display: flex;
+    }
+
+    .STPageContainerDiv div {
+        width: 50%;
+    }
+
+    .AssignTeachCont {
+        height: 2rem;
+        display: flex;
+        justify-content: end;
+        gap: 0.5rem;
+    }
+
+    #AssignTeachSave {
+        display: none;
+        align-items: center;
+        padding: 0.5rem 2.2rem;
+    }
+
+    #AssignTeachCancel {
+        display: none;
+        align-items: center;
+        padding: 0.5rem 2.2rem;
+    }
+
+    #AsgnSecStudSave {
+        display: none;
+        align-items: center;
+        padding: 0.5rem 2.7rem;
+        background-color: #010101;
+        border: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #AsgnSecStudSave:hover {
+        background-color: #242424;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #AsgnSecStudCancel {
+        display: none;
+        align-items: center;
+        padding: 0.5rem 2.2rem;
+        background-color: #01010100;
+        border: 1px solid #010101;
+        color: #000000;
+        border-radius: 5px;
+    }
+
+    #AsgnSecStudCancel:hover {
+        background-color: #01010124;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .ResultSUbjCont {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .SubjContHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 2.2rem;
+    }
+
+    .SubjContHeader button {
+        padding: 0.5rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .DisplayMessage {
+        margin-top: 3%;
+    }
+
+    .DisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #Eoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .ECloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    #ECloseAddSubj {
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #ESubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .EinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 58vh;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #Einputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #Einputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 4%;
+    }
+
+    #Einputs h4 {
+        margin-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    #Einputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 5%;
+    }
+
+    #Einputs select {
+        width: 100%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 5%;
+    }
+
+    #Einputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 5%;
+    }
+
+    .EMoreOptions {
+        display: flex;
+        justify-content: end;
+        margin-top: 4%;
+        width: 86%;
+        height: 3.5%;
+
+    }
+
+    .EMoreOptions button {
+        padding: 0.2rem 1.3rem;
+    }
+
+    .EDisplayMessage {
+        margin-top: 5%;
+    }
+
+    .EDisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .EDisplayMessageError span {
+        color: red;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #Doverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .DCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #DCloseAddSubj {
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 3px 7px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .DisplayMessageDel {
+        margin-top: 3%;
+    }
+
+    .DisplayMessageDel span {
+        font-size: 12px;
+        color: rgb(10, 208, 10);
+    }
+
+    #DSubjectArea {
+        display: none;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .DelOptions {
+        display: flex;
+        gap: 4%;
+    }
+
+    #Dinputs button {
+        padding: 0.2rem 2.0rem;
+        margin-top: 5%;
+    }
+
+    #Dinputs span {
+        font-size: 15px;
+    }
+
+    .DinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 15vh;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #Dinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #ECoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .ECCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    .ECinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 21vw;
+        height: 19vh;
+        background-color: #f7f5f3;
+        border-radius: 10px;
+        padding: 5px 5px;
+    }
+
+    #ECinputs h3 {
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    #ECinputs span {
+        color: #4c4846;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+        width: 90%;
+    }
+
+    #ECinputs button {
+        margin-top: 5%;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 0.4rem 2.3rem;
+    }
+
+    #ECinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #EDoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .EDCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    .EDinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 21vw;
+        height: 19vh;
+        background-color: #f7f5f3;
+        border-radius: 10px;
+        padding: 5px 5px;
+    }
+
+    #EDinputs h3 {
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    #EDinputs span {
+        color: #4c4846;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+        width: 90%;
+    }
+
+    #EDinputs button {
+        margin-top: 5%;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 0.4rem 2.3rem;
+    }
+
+    #EDinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #DeclinetudEnroll {
+        border: none;
+        background-color: #010101;
+        color: white;
+    }
+
+    #DeclinetudEnroll:hover {
+        background-color: #242424;
+        cursor: pointer;
+        color: white;
+    }
+
+    #ConfirmStudEnroll {
+        border: none;
+        background-color: #010101;
+        color: white;
+    }
+
+    .CancelStudEnroll {
+        background-color: #f7f5f3;
+        cursor: pointer;
+    }
+
+    #ConfirmStudEnroll:hover {
+        background-color: #242424;
+        cursor: pointer;
+        color: white;
+    }
+
+    .CancelStudEnroll:hover {
+        background-color: #ffbcb7;
+        cursor: pointer;
+    }
+
+    .ECCloseAddSubj {
+        font-size: 16px;
+        background-color: #e9e4e0;
+        padding: 3px 7px;
+        border: none;
+        color: #201e1f;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .ECCloseAddSubj:hover {
+        background-color: #d6d6d6;
+    }
+
+    .EDCloseAddSubj {
+        font-size: 16px;
+        background-color: #e9e4e0;
+        padding: 3px 7px;
+        border: none;
+        color: #201e1f;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .EDCloseAddSubj:hover {
+        background-color: #d6d6d6;
+    }
+
+    .ECDisplayMessage {
+        margin-top: 3%;
+
+    }
+
+    #ECDisplayMessagee {
+        font-size: 11px;
+        color: rgb(10, 208, 10);
+    }
+
+
+
+
+    #SFContents table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #SFContents table tr {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #SFContents table tr:first-child {
+        font-size: 0.9rem;
+        background: #201e1f;
+        color: white;
+    }
+
+    #SFContents table td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 18vw;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #SFContents table td:not(.SN, .SS, .ST, .TN) {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 18vw;
+        height: 2.5rem;
+        text-align: center;
+    }
+
+    /* ----------------------School Fee---------------------------- */
+
+    #SFAdd {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    #SFAdd img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #SFAdd:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #SchoolFeesArea {
+        display: none;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 7%;
+    }
+
+    #SFinputs select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 1.9rem;
+        margin-bottom: 3%;
+
+    }
+
+    #SFoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SFCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #SFCloseSchoolFee {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #SFCloseSchoolFee:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #SFSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .SFinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 19vw;
+        height: 21rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #SFinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #SFinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #SFinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #SFinputs input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 1.4rem;
+        margin-bottom: 3%;
+        height: 10%;
+    }
+
+    #SFinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #SFEoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SFECloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+
+    #SFEinputs select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 1.4rem;
+        margin-bottom: 3%;
+        height: 7%;
+    }
+
+    #SFECloseAddSubj {
+        font-size: 14px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #SFESubjectArea {
+        display: none;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .SFEinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 54vh;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #SFEinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #SFEinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 4%;
+    }
+
+    #SFEinputs h4 {
+        margin-top: 7%;
+        margin-bottom: 8%;
+    }
+
+    #SFEinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 5%;
+    }
+
+    #SFEinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 5%;
+    }
+
+    #DisplaySchoolFeesArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 17%;
+    }
+
+    #SFDeloverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SFDelCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #SFDelClose {
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 3px 7px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .SFDelDisplayMessageDel {
+        margin-top: 3%;
+    }
+
+    .SFDelDisplayMessageDel span {
+        font-size: 12px;
+        color: rgb(10, 208, 10);
+    }
+
+    #SFDelSubjectArea {
+        display: none;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .SFDelOptions {
+        display: flex;
+        gap: 4%;
+    }
+
+    #SFDelinputs button {
+        padding: 0.2rem 2.0rem;
+        margin-top: 5%;
+    }
+
+    #SFDelinputs span {
+        font-size: 15px;
+    }
+
+    .SFDelinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 23vw;
+        height: 15vh;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #SFDelinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #SFDelDisplaySchoolFeesArea {
+        width: 100%;
+        height: 100%;
+    }
+
+    .SFDelMoreOptions {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 3.5%;
+
+    }
+
+    .SFDelMoreOptions button {
+        padding: 0.2rem 1.3rem;
+    }
+
+    .SFTtable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .SFTtable tr {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .SFTtable tr:first-child {
+        background: #201e1f;
+        color: white;
+    }
+
+    .SFTtable td {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 18vw;
+        height: 2rem;
+        text-align: center;
+    }
+
+    .SFTtable td:not(.SN, .SS, .ST, .TN) {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 18vw;
+        height: 2.5rem;
+        text-align: center;
+    }
+
+    .SFEditSubj {
+        padding: 0.2rem 1.3rem;
+        margin-right: 2%;
+    }
+
+    .SFDeleteSubj {
+        padding: 0.2rem 1.3rem;
+    }
+
+    .SFEDisplayMessage {
+        margin-top: 4%;
+    }
+
+    .SFEDisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .SFDisplayMessage {
+        margin-top: 4%;
+    }
+
+    .SFDisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #SFEClose {
+        font-size: 16px;
+        background-color: #d60f0f;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 10%;
+        gap: 2%;
+    }
+
+
+
+    #SFContents {
+        height: 460px;
+        width: 100%;
+    }
+
+    .Spagination {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        width: 10%;
+        gap: 2%;
+
+    }
+
+    .pagination-link {
+        width: 25%;
+
+    }
+
+    .pagination a {
+        padding: 8px 0.4px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #dddddd;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+
+    }
+
+    .Spagination-link {
+        width: 25%;
+
+    }
+
+    .Spagination a {
+        padding: 8px 0.4px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #dddddd;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+
+    }
+
+    .activePage {
+        background-color: #201e1f;
+    }
+
+    .SYMainCont {
+        width: 81vw;
+        height: 78vh;
+        display: flex;
+        gap: 2%;
+        margin-top: 0.5%;
+    }
+
+    .SYContainer {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 3rem;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .GradingPContainer {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 3rem;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .SYContainer img {
+        width: 1.2rem;
+        height: 1.2rem;
+
+    }
+
+    .SYContainer button {
+        padding: 0.5rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #AddSchoolYear {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    #AddSchoolYear img {
+        margin-right: 10px;
+    }
+
+    #AddSchoolYear:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    #AsgnStudSect {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    #AsgnStudSect img {
+        margin-right: 10px;
+    }
+
+    #AsgnStudSect:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    .SYTopCont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    #SYBottomCont {
+        width: 100%;
+        height: 100%;
+    }
+
+    .GradingPContainer img {
+        width: 1.2rem;
+        height: 1.2rem;
+
+    }
+
+    .GradingPContainer button {
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #AddGradingPeriod {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    #AddGradingPeriod img {
+        margin-right: 10px;
+    }
+
+    #AddGradingPeriod:hover {
+        color: #f9ed35;
+        background-color: #000000;
+    }
+
+    .GPTopCont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #GPBottomCont {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #SYoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SYCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #SYCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #SYCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #StrCloseStrand {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #StrCloseStrand:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #SYSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .SYinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 23%;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #SYinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #SYinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #SYinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #SYinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #SYinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #Stroverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .StrCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #StrCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #StrCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #StrSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .StrinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 22vw;
+        height: 21rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #Strinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #Strinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #Strinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #Strinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #Strinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+
+    #Crsoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .CrsCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #CrsCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #CrsCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #CrsSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .CrsinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 22vw;
+        height: 21rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #Crsinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #Crsinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #Crsinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #Crsinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #Crsinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #CrsCloseCourse {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #CrsCloseCourse:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #Secoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SecCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #SecCloseSection {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #SecCloseSection:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #SecSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .SecinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 22vw;
+        height: 30rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #Secinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #Secinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #Secinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #Secinputs input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 1.4rem;
+        margin-bottom: 3%;
+        height: 7%;
+    }
+
+    #Secinputs select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.4rem 1.4rem;
+        margin-bottom: 3%;
+        height: 7%;
+    }
+
+    #Secinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #GLoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .GLCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #GLCloseGradingPeriod {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #GLCloseGradingPeriod:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #GLSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .GLinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 22vw;
+        height: 17rem;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #GLinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #GLinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #GLinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #GLinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #GLinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+
+
+    .trFirstGL td:nth-child(1) {
+        width: 35%;
+    }
+
+    .GLtable td:nth-child(1) {
+        width: 35%;
+    }
+
+    .GLtable button {
+        width: 1rem;
+        height: 0.4rem;
+    }
+
+    #GPoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .GPCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #GPCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #GPCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #GPSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .GPinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 22%;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #GPinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #GPinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #GPinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #GPinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #GPinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #GPoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .GPCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #GPCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #GPCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #GPSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .GPinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 22%;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #GPinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #GPinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #GPinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #GPinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #GPinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    /*  */
+    #TFoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .TFCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    #TFCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #TFCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #TFSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .TFinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 84vh;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #TFinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #TFinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #TFinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+
+    #TFinputs input {
+        width: 80%;
+        padding: 0.4rem 2.1rem;
+        margin-bottom: 3%;
+    }
+
+    #TFinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+
+
+    .EMoreOptions {
+        display: flex;
+        justify-content: end;
+        margin-top: 4%;
+        width: 86%;
+        height: 3.5%;
+
+    }
+
+    .EMoreOptions button {
+        padding: 0.2rem 1.3rem;
+    }
+
+    .EDisplayMessage {
+        margin-top: 5%;
+    }
+
+    .EDisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .EDisplayMessageError span {
+        color: red;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .SYDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .SYDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .StrDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .StrDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .SecDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .SecDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .SecDispErrMess {
+        margin-top: 1%;
+    }
+
+    .SecDispErrMess span {
+        color: rgb(196, 0, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .CrsDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .CrsDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .GLDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .GLDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .GPDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .GPDisplayMessage span {
+        color: rgb(0, 196, 0);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .GLtable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .GLtable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        font-size: 0.9rem;
+    }
+
+    .GLtable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .GLtable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    .GLtable tr:not(.trFirstGL):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+
+    #SubmitSFBtn:hover {
+        cursor: pointer;
+        background-color: #010101;
+    }
+
+    .GLtable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .GLtable td button {
+        margin-right: 3%;
+        padding: 0.4rem 0.7rem;
+    }
+
+    #SchoolFeesContents {
+        height: 80%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #SchoolFeesContents::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+    }
+
+    #SchoolFeesContents::-webkit-scrollbar-thumb {
+        background-color: #c5c5c5;
+        border-radius: 20px;
+    }
+
+    .trFirstSec td:nth-child(1) {
+        width: 35%;
+    }
+
+    .Sectable td:nth-child(1) {
+        width: 35%;
+    }
+
+    .trFirstSec td:nth-child(2) {
+        width: 75%;
+    }
+
+    .Sectable td:nth-child(2) {
+        width: 75%;
+    }
+
+    .trFirstSec td:nth-child(3) {
+        width: 90%;
+    }
+
+    .Sectable td:nth-child(3) {
+        width: 90%;
+    }
+
+    .trFirstSec td:nth-child(4) {
+        width: 70%;
+    }
+
+    .Sectable td:nth-child(4) {
+        width: 70%;
+    }
+
+    .trFirstSec td:nth-child(5) {
+        width: 60%;
+    }
+
+    .Sectable td:nth-child(5) {
+        width: 60%;
+    }
+
+    .Sectable {
+        margin-top: -2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Sectable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74vw;
+        font-size: 0.9rem;
+    }
+
+    .Sectable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .Sectable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.4rem;
+    }
+
+    .Sectable tr:not(.trFirstSec):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .Sectable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .Sectable td button {
+        margin-right: 3%;
+        padding: 0.4rem 0.7rem;
+    }
+
+    #LeftStrandsContent {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .Strtable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Strtable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36vw;
+        font-size: 0.9rem;
+    }
+
+    .Strtable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .Strtable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.4rem;
+    }
+
+    .Strtable tr:not(.trFirstStr):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .Strtable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .Strtable td button {
+        margin-right: 3%;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .trFirstStr td:nth-child(1) {
+        width: 10%;
+    }
+
+    .Strtable td:nth-child(1) {
+        width: 10%;
+    }
+
+    .trFirstStr td:nth-child(2) {
+        width: 35%;
+    }
+
+    .Strtable td:nth-child(2) {
+        width: 35%;
+    }
+
+    .trFirstStr td:nth-child(4) {
+        width: 35%;
+    }
+
+    .Strtable td:nth-child(4) {
+        width: 35%;
+    }
+
+    .Crstable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Crstable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32vw;
+        font-size: 0.9rem;
+    }
+
+    .Crstable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .Crstable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.4rem;
+    }
+
+    .Crstable tr:not(.trFirstCrs):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .Crstable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .Crstable td button {
+        margin-right: 3%;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .trFirstCrs td:nth-child(1) {
+        width: 15%;
+    }
+
+    .Crstable td:nth-child(1) {
+        width: 15%;
+    }
+
+    .trFirstCrs td:nth-child(3) {
+        width: 35%;
+    }
+
+    .Crstable td:nth-child(3) {
+        width: 35%;
+    }
+
+    .trFirstCrs td:nth-child(4) {
+        width: 25%;
+    }
+
+    .Crstable td:nth-child(4) {
+        width: 25%;
+    }
+
+
+
+    .EditSec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .EditSec img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .EditSec:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteSec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteSec img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .DeleteSec:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .EditGL {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .EditGL img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .EditGL:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteGL {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteGL img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .DeleteGL:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .EditCrs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .EditCrs img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .EditCrs:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteCrs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteCrs img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .DeleteCrs:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .EditStr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .EditStr img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .EditStr:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteStr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteStr img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .DeleteStr:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .SYtable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .SYtable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 41vw;
+        font-size: 0.9rem;
+    }
+
+    .SYtable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .SYtable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .SYtable tr:not(.trFirstSY):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+
+    }
+
+    .SYtable tr:nth-child(even) {
+        background-color: white;
+        align-items: center;
+    }
+
+    .SYtable td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .SelectSY {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+
+    }
+
+    .SelectSY img {
+        margin-right: 5px;
+    }
+
+    .SelectSY:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeselectSY {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .DeselectSY img {
+        margin-right: 5px;
+    }
+
+    .DeselectSY:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteSY {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteSY:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .EditGP {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .EditGP:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .DeleteGP {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .DeleteGP:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+
+    #SYDeloverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .SYDelCloseContainer {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #SYDelCloseSchoolYear {
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #SYDelCloseSchoolYear:hover {
+        background-color: #201e1f;
+        color: white;
+    }
+
+    #SYDelSubjectArea {
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .SYDelinputsArea {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 23%;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    #SYDelinputs {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #SYDelinputs label {
+        width: 99%;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+    }
+
+    #SYDelinputs h4 {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #SYDelinputs input {
+        width: 80%;
+        padding: 0.4rem 2.3rem;
+        margin-bottom: 3%;
+    }
+
+    #SYDelinputs button {
+        padding: 0.4rem 2.3rem;
+        margin-top: 2%;
+        background-color: #201e1f;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #fadeBox {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: #201e1f;
+        color: #fff;
+        padding: 1.6rem 1.8rem;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 10px;
+        width: 18rem;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-right: 1%;
+        font-size: 0.9rem;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #fadeBox img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 5%;
+    }
+
+    .GPtable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .GPtable tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25.5vw;
+        font-size: 0.9rem;
+    }
+
+    .GPtable tr:first-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.6rem 0rem;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid #201e1f;
+    }
+
+    .GPtable tr:not(.trFirstGP):nth-child(odd) {
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+    }
+
+    .GPtable td {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .GPtable td button {
+        margin-right: 1%;
+        padding: 0.4rem 0.5rem;
+
+    }
+
+    .StatusTrue span {
+        color: #1e875a;
+        font-weight: 600;
+
+    }
+
+    .StatusTrue {
+        background-color: #e6f7ed;
+        padding: 7px 15px;
+        border-radius: 40px;
+    }
+
+    .StatusFalse span {
+        color: #c45047;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .StatusFalse {
+        background-color: #fef3f2;
+        padding: 7px 15px;
+        border-radius: 40px;
+    }
+
+
+
+    .SelectSY {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+
+    }
+
+    .SelectSY img {
+        margin-right: 5px;
+    }
+
+    .SelectSY:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .SubjAssignBtn {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 1.8rem;
+        padding: 0.4rem 1.5rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        border: none;
+    }
+
+    .SubjAssignBtn:hover {
+        cursor: pointer;
+        background-color: rgb(229, 229, 229);
+    }
+
+    .MoreActionsSubj {
+        padding: 0.2rem 0.3rem;
+        border-radius: 50%;
+        margin-left: 1%;
+    }
+
+    .MoreActionsSubj img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .MoreActionsSubj:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .MoreActStudBtn {
+        padding: 0.2rem 0.3rem;
+        border-radius: 50%;
+        margin-left: 1%;
+    }
+
+    .MoreActStudBtn img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .MoreActStudBtn:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .actionsBox {
+        position: absolute;
+        display: none;
+        background-color: #f6f6f6;
+        width: 7%;
+        height: 10%;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .actionsBox2 {
+        position: absolute;
+        display: none;
+        background-color: #f6f6f6;
+        width: 7%;
+        height: 4.4rem;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .visible2 {
+        display: block;
+    }
+
+    .MASubjCont {
+        width: 100%;
+        height: 10%;
+        color: black;
+    }
+
+    .MASubjCont div {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .MASubjCont div img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 5%;
+    }
+
+    .MASubjCont div:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .StudEnrollActions {
+        width: 100%;
+        height: 10%;
+        color: black;
+    }
+
+    .StudEnrollActions div {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .StudEnrollActions div img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 5%;
+    }
+
+    .StudEnrollActions div:hover {
+        background-color: rgb(229, 229, 229);
+        cursor: pointer;
+    }
+
+    .TFDisplayMessage {
+        margin-top: 3%;
+    }
+
+    .TFDisplayMessage span {
+        color: rgb(0, 204, 0);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #RightSubjContent::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+
+    }
+
+    #RightSubjContent::-webkit-scrollbar-thumb {
+        background-color: #c5c5c5;
+        border-radius: 20px;
+    }
+
+    #ENoverlay {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 6;
+        position: absolute;
+    }
+
+    .ENoverlayContainer {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 690px;
+        height: 660px;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+    }
+
+    .ENOverlayContents {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .ENOverlayheader {
+        display: flex;
+        position: absolute;
+    }
+
+    #ENcloseoverlayContainer {
+        font-size: 18px;
+        padding: 5px 10px;
+        border: none;
+        color: #010101;
+        font-weight: bold;
+        z-index: 5;
+        border-radius: 50%;
+    }
+
+    #ENcloseoverlayContainer:hover {
+        background-color: #010101;
+        color: white;
+        cursor: pointer;
+        padding: 4px 10px;
+    }
+
+    .Mg1UserStudPic {
+        object-fit: cover;
+        width: 220px;
+        height: 220px;
+        border-radius: 4%;
+        border: 1px solid #010101;
+        margin-left: 10%;
+        z-index: 4;
+    }
+
+    .StudentTItle {
+        margin-top: 6%;
+        margin-bottom: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .StudentInfoContainer {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 91%;
+        height: 31%;
+        border-radius: 10px;
+
+    }
+
+    .StudentInfoContainerBottom h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    .StudInfoTitle {
+        background-color: #201e1f;
+        height: 1.9vh;
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+        width: 12vw;
+        border-radius: 10px;
+    }
+
+    .BStudInfoTitle {
+        background-color: #201e1f;
+        color: white;
+        height: 1.9vh;
+        font-size: 11px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    .StudentInfoSubContainer span {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .StudentInfoSubContainer {
+        margin-left: -4%;
+    }
+
+    .StudentInfoSubContainer div:not(.StudInfoTitle, .NStudInfoTitle) {
+        display: flex;
+        float: left;
+        width: 340px;
+    }
+
+    .StudContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .MainStudCont {
+        display: flex;
+        margin-left: 19%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        background-color: #d4d4d4;
+    }
+
+    .NStudContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+
+    }
+
+    .NMainStudCont {
+        padding: 4px 0px;
+        display: flex;
+        margin-left: 19%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #201e1f;
+    }
+
+    .NoResult {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 0.5%;
+    }
+
+    .InformationLineCont {
+        display: flex;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .InformationLineCont h5 {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .InformationLine {
+        width: 10px;
+        border: 0.5px solid #888888;
+    }
+
+    #ENUserIdDiv {
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+    }
+
+    #ENUserIdDiv::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+
+    }
+
+    #ENUserIdDiv::-webkit-scrollbar-thumb {
+        background-color: #c5c5c5;
+        border-radius: 20px;
+    }
+
+    .StudentInfoContainerBottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 85%;
+        padding: 4px 15px;
+    }
+
+    .BMainStudCont {
+        display: flex;
+        border-radius: 10px;
+        background-color: #d4d4d4;
+        margin-bottom: 1.5%;
+    }
+
+    .StudentInfoContainerBottom div:not(.BStudInfoTitle) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .StudentInfoContainerBottom span {
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+
+    .Mg1UserStudPic {
+        object-fit: cover;
+        width: 220px;
+        height: 220px;
+        border-radius: 4%;
+        border: 1px solid #010101;
+        margin-left: 10%;
+        z-index: 4;
+    }
+
+    .StudentInfoDocuments {
+        justify-content: center;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2%;
+    }
+
+    .StudentInfoDocuments img {
+        object-fit: cover;
+        width: 190px;
+        height: 190px;
+        border-radius: 4%;
+
+    }
+
+    .StudInfoDocsh5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .G1Note {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .DocStudEnroll {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .DocStudEnroll span {
+        margin-top: 3%;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    #AssgnStudSecGuide {
+        display: none;
+        align-items: center;
+        margin-right: 2%;
+    }
+
+    #AssgnStudSecGuide span {
+        font-size: 0.9rem;
+    }
+
+    /*
+    #queryInfo {
+        position: fixed;
+        bottom: 5rem;
+        left: 10px;
+        background-color: #ffffff0f;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 11rem;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        margin-top: 305;
+        color: white;
+        font-size: 0.9rem;
+    }
+    
+    .SubjContHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 2.2rem;
+    }
+    */
+
+    .EventsContents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+    }
+
+    .EventsAreaBG {
+        width: 74vw;
+        height: 74vh;
+        background-color: white;
+        padding: 4rem;
+        box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .EventsAreaBG2 {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .EventsAreaBG2::-webkit-scrollbar {
+        width: 5px;
+        height: 1px;
+    }
+
+    .EventsAreaBG2::-webkit-scrollbar-thumb {
+        background-color: #c8cce7;
+        border-radius: 20px;
+    }
+
+    .CoverPhotosMain {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 8%;
+    }
+
+    .CoverPhotosHeader {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        margin-bottom: 1%;
+    }
+
+    .CPHLeft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .CPHRight {
+        display: flex;
+        width: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+
+    #PreviewText{
+        display: none;
+        margin: auto;
+        padding: 0.7rem;
+    }
+
+    #CPMAddPhotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 95%;
+        border-radius: 15px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    }
+
+    #CPMAddPhotos:hover{
+        cursor: pointer;
+    }
+
+    #CPMAddPhotosDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CP_AddPhoto {
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+        margin-bottom: 10%;
+    }
+
+    #CPMAddPhotos span{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    #CPMAddPhotosInput{
+        display: flex;
+    }
+
+    #CPoverlay{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+    
+  .CPContainer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 47%;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 5px 5px;
+    padding: 1rem;
+    animation: popup 0.3s ease forwards; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .CPContainer:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+    #CPContent{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .CPPrevContainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .CPButtons{
+        width: 100%;
+        height: 23%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CPButtons button{
+        width: 100%;
+        margin: auto;
+        padding: 0.7rem;
+    }
+
+    #SaveCoverPhoto{
+        background-color: #050608;
+        color: white;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #SaveCoverPhoto:hover{
+        background-color: #201e1f;
+        cursor: pointer;
+    }
+
+    #CancelCoverPhoto{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #CancelCoverPhoto:hover{
+        cursor: pointer;
+        background-color: #eaeaea;
+    }
+
+    #AddCPBtn {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem 1.7rem;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s, color 0.3s;
+        position: relative; 
+    }
+    
+    #AddCPBtn img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+        transition: opacity 0.3s;
+        content: url('../../images/plus-circle.svg');
+    }
+    
+    #AddCPBtn:hover img{
+        content: url('../../images/Add-Circle--Streamline-Core (1).png');
+    }
+
+    #AddCPBtn::after {
+        opacity: 0; 
+        transition: opacity 0.3s; 
+    }
+    
+    #AddCPBtn:hover{
+        color: #f9ed35;
+        animation: buttonScale 0.3s forwards;
+    }
+
+    #EVCB1T_btn {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem 1.7rem;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s, color 0.3s;
+        position: relative; 
+    }
+    
+    #EVCB1T_btn img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+        transition: opacity 0.3s;
+        content: url('../../images/plus-circle.svg');
+    }
+    
+    #EVCB1T_btn:hover img{
+        content: url('../../images/Add-Circle--Streamline-Core (1).png');
+    }
+
+    #EVCB1T_btn::after {
+        opacity: 0; 
+        transition: opacity 0.3s; 
+    }
+    
+    #EVCB1T_btn:hover{
+        color: #f9ed35;
+        animation: buttonScale 0.3s forwards;
+    }
+    
+    @keyframes buttonScale {
+        0% {
+            transform: scale(1); 
+        }
+        100% {
+            transform: scale(0.95); 
+        }
+    }
+    .CPMBtns{
+        display: flex;
+        align-items: center;
+    }
+
+    .ByMainContSubj2 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 40%;
+        gap: 1%;
+        color: #f9ed35;
+        margin-right: 2%;
+    }
+
+    .ByMainContSubj2 select {
+        padding: 0.5rem 1rem;
+        background-color: rgb(238, 238, 238);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .DelImageCont{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .DelImage{
+        position: absolute;
+        background-color: #4959A6;
+        width: 20px; 
+        height: 20px;
+        object-fit: cover;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .ImageContainer{
+        width: 30%;
+        height: 85%;
+        padding: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .ImageContainer:hover{
+        transform: scale(1.1);
+        transition: .2s linear;
+    }
+
+    
+    #CPMPreviewCont{
+        height: 52%;
+        display: none; 
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    
+    #CPMPreviewCont::-webkit-scrollbar {
+        width: 2px;
+        height: 7px;
+    }
+
+    #CPMPreviewCont::-webkit-scrollbar-thumb {
+        background-color: #201e1f;
+        border-radius: 20px;
+    }
+
+    .CPPhotos{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #CPMBottom {
+        width: 100%;
+        height: auto;
+        overflow:hidden;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 0.7rem;
+    }
+
+    .CPMBottom-Cont{
+        display: none;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CPhotos_Preview img{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    #EventsMain {
+        width: 100%;
+        height: 70vh;
+        border: 1px solid black;
+    }
+
+    .EventsHeader {
+        display: flex;
+        width: 100%;
+        height: 7%;
+    }
+
+    #Events_Bottom{
+        width: 100%;
+        height: 93%;
+        border: 1px solid black;
+    }
+
+    #pleaseWaitCont {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: white;
+        z-index: 10;
+    }
+
+    #CP_LoadingBar{
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LB_ImageCont{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LB_Image{
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        margin-bottom: 3%;
+    }
+
+    .LB_Span{
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+
+    
+    #EventsOverlay{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #24262aa7;
+        z-index: 4;
+        position: fixed;
+    }
+    
+    .EvContainer {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        height: 73%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        animation: popup 0.3s ease forwards; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .EvMainCont{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .EvMainCont::-webkit-scrollbar {
+        width: 5px;
+        height: 1px;
+    }
+
+    .EvMainCont::-webkit-scrollbar-thumb {
+        background-color: #c8cce7;
+        border-radius: 20px;
+    }
+
+    @keyframes popup {
+        0% {
+        transform: scale(0);
+        opacity: 0;
+        }
+        100% {
+        transform: scale(1);
+        opacity: 1;
+        }
+    }
+    
+    .CPContainer:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .EVC_Top{
+        width: 100%;
+        height: 5%;
+    }
+
+    .EVC_Bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .EVCB_1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 95%;
+    }
+
+    #EVCB1T_label{
+        font-weight: 500;
+        font-size: 0.9rem;
+      
+    }
+
+    .EVCB_2{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 5%;
+    }
+
+    .EVCB1_Tags{
+        width: 100%;
+    }
+
+    .Tag{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #4959A6;
+        color: white;
+        border-radius: 15px;
+        padding-left: 1.2rem;
+    }
+
+
+    .Tag img{
+        margin-left: 2%;
+        padding: 0.7rem;
+        width: 0.7rem;
+        height: 0.7rem;
+        object-fit: cover;
+        background-color: #4959A6;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .Tag img:hover{
+        background-color: #2f3d86;
+        cursor: pointer;
+    }
+
+    #EVCB1T_btn{
+        padding: 0.4rem 1rem;
+        display:flex;
+    }
+    
+    .EVCB1T_Top{
+        width: 99%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    
+    #EVCB1T_Bottom{
+        width: 95%;
+        height: 2%;
+        padding: 1rem;
+        background-color: #efefef;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }
+
+    #TagsContainer{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        margin-bottom: 2%;
+    }
+    
+    #EVCB1TB_Input{
+       resize: none;
+    }
+
+    .EVCB_1 input:not(#EVCB1TB_Input, #EVCB1T_Bottom){
+        width: 95%;
+        height: 2%;
+        padding: 1rem;
+        background-color: #efefef;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }   
+
+    .EVCB_1 label:not(#EPC_label, #EVCB1T_label){
+        margin-bottom: 2%;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .EVCB_1 textarea{
+        width: 95%;
+        padding: 1rem;
+        background-color: #efefef;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .EventsPhotosCont{
+        width: 99%;
+        height: 25vh;
+        margin-bottom: 4%;
+    }
+
+    .EPC_Top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        margin-bottom: 1%;
+    }
+
+    .EPC_Top label{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    #AddCPhotoEvent{
+        padding: 0.4rem 1rem;
+    }
+
+    #EPC_Bottom{
+        width: 100%;
+        height: 85%;
+    }
+
+    #EventCPContainer{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #UploadEventsBtn {
+        background-color: #201e1f;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem 1.7rem;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s, color 0.3s;
+        position: relative; 
+    }
+    
+    #UploadEventsBtn img {
+        margin-right: 10px;
+        width: 1.3rem;
+        height: 1.3rem;
+        transition: opacity 0.3s;
+        content: url('../../images/plus-circle.svg');
+    }
+    
+    #UploadEventsBtn:hover img{
+        content: url('../../images/Add-Circle--Streamline-Core (1).png');
+    }
+
+    #UploadEventsBtn::after {
+        opacity: 0; 
+        transition: opacity 0.3s; 
+    }
+    
+    #UploadEventsBtn:hover{
+        color: #f9ed35;
+        animation: buttonScale 0.3s forwards;
+    }
+
+   
